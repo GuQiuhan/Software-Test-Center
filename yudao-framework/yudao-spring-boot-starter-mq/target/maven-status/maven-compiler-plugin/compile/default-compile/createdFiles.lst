@@ -1,0 +1,10 @@
+cn/iocoder/yudao/framework/mq/core/RedisMQTemplate.class
+cn/iocoder/yudao/framework/mq/job/RedisPendingMessageResendJob.class
+cn/iocoder/yudao/framework/mq/core/pubsub/AbstractChannelMessage.class
+cn/iocoder/yudao/framework/mq/core/stream/AbstractStreamMessageListener.class
+cn/iocoder/yudao/framework/mq/core/stream/AbstractStreamMessage.class
+org/springframework/data/redis/stream/DefaultStreamMessageListenerContainerX.class
+cn/iocoder/yudao/framework/mq/core/interceptor/RedisMessageInterceptor.class
+cn/iocoder/yudao/framework/mq/core/pubsub/AbstractChannelMessageListener.class
+cn/iocoder/yudao/framework/mq/core/message/AbstractRedisMessage.class
+cn/iocoder/yudao/framework/mq/config/YudaoMQAutoConfiguration.class

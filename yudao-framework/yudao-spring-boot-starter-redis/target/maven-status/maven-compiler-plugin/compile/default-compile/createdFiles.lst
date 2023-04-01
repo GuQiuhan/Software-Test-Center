@@ -1,0 +1,6 @@
+cn/iocoder/yudao/framework/redis/config/YudaoRedisAutoConfiguration.class
+cn/iocoder/yudao/framework/redis/core/RedisKeyDefine.class
+cn/iocoder/yudao/framework/redis/config/YudaoCacheAutoConfiguration.class
+cn/iocoder/yudao/framework/redis/core/RedisKeyDefine$KeyTypeEnum.class
+cn/iocoder/yudao/framework/redis/core/RedisKeyRegistry.class
+cn/iocoder/yudao/framework/redis/core/RedisKeyDefine$TimeoutTypeEnum.class

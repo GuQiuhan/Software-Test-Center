@@ -1,0 +1,4 @@
+cn/iocoder/yudao/framework/excel/core/annotations/DictFormat.class
+cn/iocoder/yudao/framework/excel/core/util/ExcelUtils.class
+cn/iocoder/yudao/framework/excel/core/convert/JsonConvert.class
+cn/iocoder/yudao/framework/excel/core/convert/DictConvert.class

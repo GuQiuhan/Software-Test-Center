@@ -1,0 +1,15 @@
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\annotation\DataPermission.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\config\YudaoDataPermissionAutoConfiguration.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\util\DataPermissionUtils.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\aop\DataPermissionAnnotationInterceptor.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\db\DataPermissionDatabaseInterceptor.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\rule\dept\package-info.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\config\YudaoDeptDataPermissionAutoConfiguration.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\aop\DataPermissionAnnotationAdvisor.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\rule\dept\DeptDataPermissionRule.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\rule\DataPermissionRuleFactoryImpl.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\rule\DataPermissionRuleFactory.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\aop\DataPermissionContextHolder.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\rule\dept\DeptDataPermissionRuleCustomizer.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\core\rule\DataPermissionRule.java
+D:\NJU_new\Software-Test-Center\yudao-framework\yudao-spring-boot-starter-biz-data-permission\src\main\java\cn\iocoder\yudao\framework\datapermission\package-info.java

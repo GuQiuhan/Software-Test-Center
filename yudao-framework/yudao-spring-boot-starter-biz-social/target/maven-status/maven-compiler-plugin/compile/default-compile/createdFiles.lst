@@ -1,0 +1,7 @@
+cn\iocoder\yudao\framework\social\config\YudaoSocialAutoConfiguration.class
+cn\iocoder\yudao\framework\social\core\enums\AuthExtendSource$1.class
+cn\iocoder\yudao\framework\social\core\enums\AuthExtendSource.class
+cn\iocoder\yudao\framework\social\core\request\AuthWeChatMiniAppRequest.class
+cn\iocoder\yudao\framework\social\core\request\AuthWeChatMiniAppRequest$JSCode2SessionResponse.class
+cn\iocoder\yudao\framework\social\core\YudaoAuthRequestFactory.class
+cn\iocoder\yudao\framework\social\core\YudaoAuthRequestFactory$1.class

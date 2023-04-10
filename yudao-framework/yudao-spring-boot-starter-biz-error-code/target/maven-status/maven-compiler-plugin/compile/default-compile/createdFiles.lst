@@ -1,0 +1,7 @@
+cn\iocoder\yudao\framework\errorcode\core\loader\ErrorCodeLoaderImpl.class
+cn\iocoder\yudao\framework\errorcode\core\generator\ErrorCodeAutoGeneratorImpl.class
+cn\iocoder\yudao\framework\errorcode\core\generator\ErrorCodeAutoGenerator.class
+cn\iocoder\yudao\framework\errorcode\core\loader\ErrorCodeLoader.class
+cn\iocoder\yudao\framework\errorcode\config\ErrorCodeProperties.class
+cn\iocoder\yudao\framework\errorcode\config\YudaoErrorCodeConfiguration.class
+META-INF\spring-configuration-metadata.json

@@ -12,8 +12,8 @@ $buttonH: 50;
 $containerBgColor: #e6ebf2;
 $containerBgImage: '../assets/images/back.png';
 // container-logo
-$logoWidth: 1000px;
-$logoHeight: 92px;
+$logoWidth: 800px;
+$logoHeight: 80px;
 $logoImage: '../assets/logo/name.png';
 // container-content
 $contentWidth: round($W / $H * 100) * 1vw;
@@ -70,7 +70,7 @@ $buttonHeight: $buttonH * 1px;
     // 定位
     position: absolute;
     top: 60px;
-    left: 60%;
+    left: 55%;
     margin-left: -$logoWidth/2;
   }
   .content {

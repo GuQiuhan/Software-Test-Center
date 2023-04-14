@@ -8,13 +8,14 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Schema(description = "账号密码登录 Response VO")
+@Schema(description = "账号注册 Response VO")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class AuthLoginRespVO {
-
+public class AuthRegisterRespVO {
+    /*@Schema(description = "token。返回token作为认证，调用需要认证的接口时需要传入该参数", required = true, example = "4389dhkd93ujdasgudd32h2e")
+    private String token;*/
     @Schema(description = "用户编号", required = true, example = "1024")
     private Long userId;
 

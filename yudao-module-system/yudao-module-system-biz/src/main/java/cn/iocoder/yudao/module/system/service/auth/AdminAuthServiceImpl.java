@@ -1,3 +1,5 @@
+//加入了账号注册 AuthRegisterRespVO register(@Valid AuthRegisterReqVO reqVO);
+
 package cn.iocoder.yudao.module.system.service.auth;
 
 import cn.hutool.core.util.ObjectUtil;
@@ -6,10 +8,12 @@ import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.iocoder.yudao.framework.common.util.monitor.TracerUtils;
 import cn.iocoder.yudao.framework.common.util.servlet.ServletUtils;
 import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
+import cn.iocoder.yudao.framework.security.core.LoginUser;
 import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
 import cn.iocoder.yudao.module.system.api.sms.SmsCodeApi;
 import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
 import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
+import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.UserCreateReqVO;
 import cn.iocoder.yudao.module.system.convert.auth.AuthConvert;
 import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
@@ -27,6 +31,7 @@ import com.xingyuv.captcha.model.vo.CaptchaVO;
 import com.xingyuv.captcha.service.CaptchaService;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -89,6 +94,32 @@ public class AdminAuthServiceImpl implements AdminAuthService {
             throw exception(AUTH_LOGIN_USER_DISABLED);
         }
         return user;
+    }
+
+    public AuthLoginRespVO register(AuthRegisterReqVO reqVO) {
+        //
+        //smsCodeApi.useSmsCode(AuthConvert.INSTANCE.convert(reqVO));
+
+        // 注册用户
+        UserCreateReqVO creVO= new UserCreateReqVO();
+        BeanUtils.copyProperties(creVO, reqVO);
+
+        System.out.println(1);
+        System.out.println(creVO.getUsername());
+        System.out.println(creVO.getPassword());
+
+        Long user = userService.createUser(creVO);
+        if (user == null) {
+            throw exception(AUTH_LOGIN_BAD_CREDENTIALS);
+        }
+        System.out.println(1);
+        // 使用账号密码，进行登录
+        AdminUserDO adminUserDO = authenticate(reqVO.getUsername(), reqVO.getPassword());
+        System.out.println(2);
+        System.out.println(adminUserDO.getId());
+        System.out.println(reqVO.getUsername());
+
+        return createTokenAfterLoginSuccess(adminUserDO.getId(), reqVO.getUsername(), LoginLogTypeEnum.LOGIN_USERNAME);
     }
 
     @Override

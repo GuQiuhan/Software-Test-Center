@@ -1,0 +1,5 @@
+cn\iocoder\yudao\module\member\api\address\dto\AddressRespDTO.class
+cn\iocoder\yudao\module\member\enums\ErrorCodeConstants.class
+cn\iocoder\yudao\module\member\api\address\AddressApi.class
+cn\iocoder\yudao\module\member\api\user\dto\MemberUserRespDTO.class
+cn\iocoder\yudao\module\member\api\user\MemberUserApi.class

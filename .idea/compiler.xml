@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -39,11 +40,11 @@
         <module name="yudao-spring-boot-starter-biz-dict" />
         <module name="yudao-spring-boot-starter-biz-sms" />
         <module name="yudao-spring-boot-starter-test" />
-        <module name="yudao-spring-boot-starter-biz-data-permission" />
         <module name="yudao-spring-boot-starter-security" />
+        <module name="yudao-spring-boot-starter-biz-data-permission" />
         <module name="yudao-spring-boot-starter-web" />
-        <module name="yudao-spring-boot-starter-biz-ip" />
         <module name="yudao-spring-boot-starter-biz-operatelog" />
+        <module name="yudao-spring-boot-starter-biz-ip" />
         <module name="yudao-module-infra-api" />
         <module name="yudao-spring-boot-starter-monitor" />
         <module name="yudao-module-infra-biz" />

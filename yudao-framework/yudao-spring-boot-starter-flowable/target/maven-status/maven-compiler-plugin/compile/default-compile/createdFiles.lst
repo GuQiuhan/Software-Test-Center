@@ -1,0 +1,3 @@
+cn\iocoder\yudao\framework\flowable\core\util\FlowableUtils.class
+cn\iocoder\yudao\framework\flowable\core\web\FlowableWebFilter.class
+cn\iocoder\yudao\framework\flowable\config\YudaoFlowableConfiguration.class

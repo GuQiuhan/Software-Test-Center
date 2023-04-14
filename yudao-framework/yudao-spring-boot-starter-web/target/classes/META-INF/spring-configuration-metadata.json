@@ -114,8 +114,7 @@
       "name": "yudao.xss.enable",
       "type": "java.lang.Boolean",
       "description": "是否开启，默认为 true",
-      "sourceType": "cn.iocoder.yudao.framework.xss.config.XssProperties",
-      "defaultValue": true
+      "sourceType": "cn.iocoder.yudao.framework.xss.config.XssProperties"
     },
     {
       "name": "yudao.xss.exclude-urls",

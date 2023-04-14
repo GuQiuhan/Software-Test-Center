@@ -1,2 +1,2 @@
-cn/iocoder/yudao/framework/banner/core/BannerApplicationRunner.class
-cn/iocoder/yudao/framework/banner/config/YudaoBannerAutoConfiguration.class
+cn\iocoder\yudao\framework\banner\config\YudaoBannerAutoConfiguration.class
+cn\iocoder\yudao\framework\banner\core\BannerApplicationRunner.class

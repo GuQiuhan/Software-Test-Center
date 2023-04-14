@@ -1,0 +1,3 @@
+cn\iocoder\yudao\framework\captcha\config\YudaoCaptchaConfiguration.class
+cn\iocoder\yudao\framework\captcha\core\service\RedisCaptchaServiceImpl.class
+cn\iocoder\yudao\framework\captcha\core\enums\CaptchaRedisKeyConstants.class

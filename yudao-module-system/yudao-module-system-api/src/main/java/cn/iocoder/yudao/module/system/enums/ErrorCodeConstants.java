@@ -176,4 +176,7 @@ public interface ErrorCodeConstants {
 
     // ========== 前台菜单 1002033000  ==========
     ErrorCode FRONT_MENU_NOT_EXISTS = new ErrorCode(1002033000 , "前台菜单不存在");
+
+    // ========== 流程操作 1002034000 ==========
+    ErrorCode OPERATION_NOT_EXISTS = new ErrorCode(1002034000, "流程操作不存在");
 }

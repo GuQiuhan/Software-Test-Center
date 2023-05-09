@@ -37,3 +37,4 @@ DELETE FROM "system_contract";
 DELETE FROM "system_delegation";
 DELETE FROM "system_flow_log";
 DELETE FROM "system_front_menu";
+DELETE FROM "system_operation";

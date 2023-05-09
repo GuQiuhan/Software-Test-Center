@@ -179,4 +179,11 @@ public interface ErrorCodeConstants {
 
     // ========== 流程操作 1002034000 ==========
     ErrorCode OPERATION_NOT_EXISTS = new ErrorCode(1002034000, "流程操作不存在");
+
+    // ========== 测试报告 1002035000 ==========
+    ErrorCode REPORT_NOT_EXISTS = new ErrorCode(1002035000, "测试报告不存在");
+
+    // ========== 角色前台菜单 1002036000 ==========
+    ErrorCode ROLE_FRONT_MENU_NOT_EXISTS = new ErrorCode(1002036000, "角色前台菜单不存在");
+
 }

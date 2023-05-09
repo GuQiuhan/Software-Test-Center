@@ -151,6 +151,8 @@ yudao:
       - system_flow_log
       - system_front_menu
       - system_operation
+      - system_report
+      - system_role_front_menu
       - system_tenant
       - system_tenant_package
       - system_dict_data

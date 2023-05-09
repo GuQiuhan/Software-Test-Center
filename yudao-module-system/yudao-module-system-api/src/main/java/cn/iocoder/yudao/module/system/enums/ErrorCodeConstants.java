@@ -162,4 +162,18 @@ public interface ErrorCodeConstants {
     // ========== 站内信发送 1002028000 ==========
     ErrorCode NOTIFY_SEND_TEMPLATE_PARAM_MISS = new ErrorCode(1002025000, "模板参数({})缺失");
 
+    // ========== 公司 1002029000 ==========
+    ErrorCode COMPANY_NOT_EXISTS = new ErrorCode(1002029000, "公司不存在");
+
+    // ========== 合同 1002030000 ==========
+    ErrorCode CONTRACT_NOT_EXISTS = new ErrorCode(1002030000, "合同不存在");
+
+    // ========== 委托 1002031000 ==========
+    ErrorCode DELEGATION_NOT_EXISTS = new ErrorCode(1002031000, "委托不存在");
+
+    // ========== 流程日志 1002032000 ==========
+    ErrorCode FLOW_LOG_NOT_EXISTS = new ErrorCode(1002032000, "流程日志不存在");
+
+    // ========== 前台菜单 1002033000  ==========
+    ErrorCode FRONT_MENU_NOT_EXISTS = new ErrorCode(1002033000 , "前台菜单不存在");
 }

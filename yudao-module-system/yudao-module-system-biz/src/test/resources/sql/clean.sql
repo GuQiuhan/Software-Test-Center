@@ -32,3 +32,8 @@ DELETE FROM "system_mail_template";
 DELETE FROM "system_mail_log";
 DELETE FROM "system_notify_template";
 DELETE FROM "system_notify_message";
+DELETE FROM "system_company";
+DELETE FROM "system_contract";
+DELETE FROM "system_delegation";
+DELETE FROM "system_flow_log";
+DELETE FROM "system_front_menu";

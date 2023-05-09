@@ -40,3 +40,6 @@ DELETE FROM "system_front_menu";
 DELETE FROM "system_operation";
 DELETE FROM "system_report";
 DELETE FROM "system_role_front_menu";
+DELETE FROM "system_sample";
+DELETE FROM "system_solution";
+DELETE FROM "system_user_company";

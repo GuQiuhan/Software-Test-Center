@@ -186,4 +186,14 @@ public interface ErrorCodeConstants {
     // ========== 角色前台菜单 1002036000 ==========
     ErrorCode ROLE_FRONT_MENU_NOT_EXISTS = new ErrorCode(1002036000, "角色前台菜单不存在");
 
+    // ========== 样品 1002037000 ==========
+    ErrorCode SAMPLE_NOT_EXISTS = new ErrorCode(1002037000, "样品不存在");
+
+    // ========== 测试方案 1002038000 ==========
+    ErrorCode SOLUTION_NOT_EXISTS = new ErrorCode(1002038000, "测试方案不存在");
+
+    // ========== 用户和公司关联 1002039000 ==========
+    ErrorCode USER_COMPANY_NOT_EXISTS = new ErrorCode(1002039000, "用户和公司关联不存在");
+
+
 }

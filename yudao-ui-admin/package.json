@@ -1,7 +1,9 @@
 {
   "name": "yudao-ui-admin",
   "version": "1.7.1-snapshot",
-  "description": "芋道管理系统",
+
+  "description": "南京大学软件在线测试中心",
+
   "author": "芋道",
   "license": "MIT",
   "scripts": {

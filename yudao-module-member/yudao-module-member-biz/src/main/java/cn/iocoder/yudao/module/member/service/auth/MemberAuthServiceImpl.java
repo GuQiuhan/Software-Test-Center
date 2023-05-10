@@ -1,7 +1,9 @@
 package cn.iocoder.yudao.module.member.service.auth;
 
+
 //import cn.binarywang.wx.miniapp.api.WxMaService;
 //import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
+
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.ObjectUtil;
 import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
@@ -58,6 +60,7 @@ public class MemberAuthServiceImpl implements MemberAuthService {
     private SocialUserApi socialUserApi;
     @Resource
     private OAuth2TokenApi oauth2TokenApi;
+
 
 //    @Resource
 //    private WxMaService wxMaService;
@@ -124,6 +127,7 @@ public class MemberAuthServiceImpl implements MemberAuthService {
 
     @Override
     public AppAuthLoginRespVO weixinMiniAppLogin(AppAuthWeixinMiniAppLoginReqVO reqVO) {
+
 //        // 获得对应的手机号信息
 //        WxMaPhoneNumberInfo phoneNumberInfo;
 //        try {
@@ -143,6 +147,7 @@ public class MemberAuthServiceImpl implements MemberAuthService {
 //        return createTokenAfterLoginSuccess(user, user.getMobile(), LoginLogTypeEnum.LOGIN_SOCIAL);
 //
         return null;
+
     }
 
     private AppAuthLoginRespVO createTokenAfterLoginSuccess(MemberUserDO user, String mobile, LoginLogTypeEnum logType) {

@@ -9,7 +9,9 @@
       <div class="field">
         <!-- [移动端]标题 -->
         <h2 class="mobile-title">
-          <h3 class="title">芋道后台管理系统</h3>
+
+          <h3 class="title">南京大学软件在线测试中心后台系统</h3>
+
         </h2>
 
         <!-- 表单 -->
@@ -46,21 +48,29 @@
               <!-- 短信验证码登录 -->
               <div v-if="loginForm.loginType === 'sms'">
                 <el-form-item prop="mobile">
-                  <el-input v-model="loginForm.mobile" type="text" auto-complete="off" placeholder="请输入手机号">
+
+                  <el-input v-model="loginForm.mobile" type="text" auto-complete="off" placeholder="手机号">
+
                     <svg-icon slot="prefix" icon-class="phone" class="el-input__icon input-icon"/>
                   </el-input>
                 </el-form-item>
                 <el-form-item prop="mobileCode">
-                  <el-input v-model="loginForm.mobileCode" type="text" auto-complete="off" placeholder="短信验证码"
+
+                  <el-row :span="24" :gutter="6">
+                    <el-col :span="10">
+                      <el-input v-model="loginForm.mobileCode" type="text" auto-complete="off" placeholder="短信验证码"
                             @keyup.enter.native="handleLogin">
-                    <template v-slot="icon">
-                      <svg-icon slot="prefix" icon-class="password" class="el-input__icon input-icon"/>
-                    </template>
-                    <template v-slot="append">
-                      <span v-if="mobileCodeTimer <= 0" class="getMobileCode" @click="getSmsCode" style="cursor: pointer;">获取验证码</span>
-                      <span v-if="mobileCodeTimer > 0" class="getMobileCode">{{ mobileCodeTimer }}秒后可重新获取</span>
-                    </template>
-                  </el-input>
+                        <svg-icon slot="prefix" icon-class="password" class="el-input__icon input-icon"/>
+                      </el-input>
+                    </el-col>
+                    <el-col :span="14" align="center">
+                      <el-button type="primary">
+                          <span v-if="mobileCodeTimer <= 0" class="getMobileCode" @click="getSmsCode" style="cursor: pointer;">获取验证码</span>
+                          <span v-if="mobileCodeTimer > 0" class="getMobileCode">{{ mobileCodeTimer }}秒后可重新获取</span>
+                      </el-button>
+                    </el-col>
+                  </el-row>
+
                 </el-form-item>
               </div>
 
@@ -73,15 +83,23 @@
                 </el-button>
               </el-form-item>
 
+
+              <el-form-item>
+                <el-link type="primary" href="https://www.baidu.com">还未注册，点我注册</el-link>
+              </el-form-item>
+
               <!--  社交登录 -->
-             <el-form-item style="width:100%;">
+             <!--<el-form-item style="width:100%;">
+
                   <div class="oauth-login" style="display:flex">
                     <div class="oauth-login-item" v-for="item in SysUserSocialTypeEnum" :key="item.type" @click="doSocialLogin(item)">
                       <img :src="item.img" height="25px" width="25px" alt="登录" >
                       <span>{{item.title}}</span>
                     </div>
                 </div>
-              </el-form-item>
+
+              </el-form-item> -->
+
             </el-form>
           </div>
         </div>
@@ -94,7 +112,9 @@
 
     <!-- footer -->
     <div class="footer">
-      Copyright © 2020-2022 iocoder.cn All Rights Reserved.
+
+      Copyright © 2022 All Rights Reserved.
+
     </div>
   </div>
 </template>
@@ -179,6 +199,7 @@ export default {
           }
         ]
       },
+
       loading: false,
       redirect: undefined,
       // 枚举
@@ -212,7 +233,13 @@ export default {
 
       // 情况二，已开启：则展示验证码；只有完成验证码的情况，才进行登录
       // 弹出验证码
-      this.$refs.verify.show()
+
+      this.$refs.loginForm.validate(valid => {
+        if (valid) {
+          this.$refs.verify.show()
+        }
+      });
+
     },
     getCookie() {
       const username = getUsername();

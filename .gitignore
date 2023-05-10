@@ -1,5 +1,3 @@
-.DS_Store
-*/.DS_Store
 
 ######################################################################
 # Build Tools
@@ -52,5 +50,8 @@ rebel.xml
 application-my.yaml
 
 /yudao-ui-app/unpackage/
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2e790bee3483650f20980fd664ab29d15961ea70

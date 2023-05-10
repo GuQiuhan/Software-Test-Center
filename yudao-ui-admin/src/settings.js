@@ -1,6 +1,13 @@
 module.exports = {
 
   /**
+
+   * 主题
+   */
+  title: '南京大学软件在线测试中心',
+
+  /**
+
    * 侧边栏主题 深色主题theme-dark，浅色主题theme-light
    */
   sideTheme: 'theme-dark',

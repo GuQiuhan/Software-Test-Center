@@ -162,4 +162,40 @@ public interface ErrorCodeConstants {
     // ========== 站内信发送 1002028000 ==========
     ErrorCode NOTIFY_SEND_TEMPLATE_PARAM_MISS = new ErrorCode(1002025000, "模板参数({})缺失");
 
+
+    // ========== 公司 1002029000 ==========
+    ErrorCode COMPANY_NOT_EXISTS = new ErrorCode(1002029000, "公司不存在");
+
+    // ========== 合同 1002030000 ==========
+    ErrorCode CONTRACT_NOT_EXISTS = new ErrorCode(1002030000, "合同不存在");
+
+    // ========== 委托 1002031000 ==========
+    ErrorCode DELEGATION_NOT_EXISTS = new ErrorCode(1002031000, "委托不存在");
+
+    // ========== 流程日志 1002032000 ==========
+    ErrorCode FLOW_LOG_NOT_EXISTS = new ErrorCode(1002032000, "流程日志不存在");
+
+    // ========== 前台菜单 1002033000  ==========
+    ErrorCode FRONT_MENU_NOT_EXISTS = new ErrorCode(1002033000 , "前台菜单不存在");
+
+    // ========== 流程操作 1002034000 ==========
+    ErrorCode OPERATION_NOT_EXISTS = new ErrorCode(1002034000, "流程操作不存在");
+
+    // ========== 测试报告 1002035000 ==========
+    ErrorCode REPORT_NOT_EXISTS = new ErrorCode(1002035000, "测试报告不存在");
+
+    // ========== 角色前台菜单 1002036000 ==========
+    ErrorCode ROLE_FRONT_MENU_NOT_EXISTS = new ErrorCode(1002036000, "角色前台菜单不存在");
+
+    // ========== 样品 1002037000 ==========
+    ErrorCode SAMPLE_NOT_EXISTS = new ErrorCode(1002037000, "样品不存在");
+
+    // ========== 测试方案 1002038000 ==========
+    ErrorCode SOLUTION_NOT_EXISTS = new ErrorCode(1002038000, "测试方案不存在");
+
+    // ========== 用户和公司关联 1002039000 ==========
+    ErrorCode USER_COMPANY_NOT_EXISTS = new ErrorCode(1002039000, "用户和公司关联不存在");
+
+
+
 }

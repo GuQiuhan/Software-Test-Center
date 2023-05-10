@@ -47,12 +47,14 @@
 <!--            <artifactId>yudao-module-report-biz</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
-        <!-- 工作流 -->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-module-bpm-biz</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+
+<!--         工作流-->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>yudao-module-bpm-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
         <!-- 支付服务 -->
 <!--        <dependency>-->
 <!--            <groupId>cn.iocoder.boot</groupId>-->
@@ -112,9 +114,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.7.8</version> <!-- 如果 spring.boot.version 版本修改，则这里也要跟着修改 -->
-<!--                <version>3.0.5</version>-->
+
                 <configuration>
-<!--                    <classifier>bak</classifier>-->
+
                     <fork>true</fork>
                 </configuration>
                 <executions>

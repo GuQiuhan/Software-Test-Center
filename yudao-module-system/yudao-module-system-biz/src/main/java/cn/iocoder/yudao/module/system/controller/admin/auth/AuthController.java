@@ -34,6 +34,10 @@ import java.util.List;
 import java.util.Set;
 
 import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+
+import static cn.iocoder.yudao.framework.common.util.servlet.ServletUtils.getClientIP;
+import static cn.iocoder.yudao.framework.common.util.servlet.ServletUtils.getUserAgent;
+
 import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.obtainAuthorization;
 import static java.util.Collections.singleton;
@@ -57,6 +61,16 @@ public class AuthController {
     private SocialUserService socialUserService;
     @Resource
     private SecurityProperties securityProperties;
+
+
+    @PostMapping("/register")
+    @Operation(summary = "注册")
+    @OperateLog(enable = false) // 避免 Post 请求被记录操作日志
+    public CommonResult<AuthLoginRespVO> register(@RequestBody @Valid AuthRegisterReqVO reqVO) {
+        System.out.println("enter register");
+        return success(authService.register(reqVO));
+    }
+
 
     @PostMapping("/login")
     @PermitAll

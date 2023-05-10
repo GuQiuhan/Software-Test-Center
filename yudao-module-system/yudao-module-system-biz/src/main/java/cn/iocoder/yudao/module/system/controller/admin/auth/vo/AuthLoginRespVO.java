@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Schema(description = "管理后台 - 登录 Response VO")
+
+@Schema(description = "账号密码登录 Response VO")
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

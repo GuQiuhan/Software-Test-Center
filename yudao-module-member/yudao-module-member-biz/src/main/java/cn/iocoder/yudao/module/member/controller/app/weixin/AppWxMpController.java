@@ -4,9 +4,11 @@ import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
+
 //import me.chanjar.weixin.common.bean.WxJsapiSignature;
 //import me.chanjar.weixin.common.error.WxErrorException;
 //import me.chanjar.weixin.mp.api.WxMpService;
+
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +25,7 @@ import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 @Validated
 @Slf4j
 public class AppWxMpController {
+
 //
 //    @Resource
 //    private WxMpService mpService;
@@ -33,5 +36,6 @@ public class AppWxMpController {
 //    public CommonResult<WxJsapiSignature> createJsapiSignature(@RequestParam("url") String url) throws WxErrorException {
 //        return success(mpService.createJsapiSignature(url));
 //    }
+
 
 }

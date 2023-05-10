@@ -35,7 +35,9 @@ export default {
   },
   data() {
     return {
-      title: '芋道管理系统',
+
+      title: '南京大学软件在线测试中心',
+
       logo: logoImg
     }
   }

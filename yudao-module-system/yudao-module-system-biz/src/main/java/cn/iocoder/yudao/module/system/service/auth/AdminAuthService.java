@@ -1,3 +1,7 @@
+
+//加入了账号注册 AuthRegisterRespVO register(@Valid AuthRegisterReqVO reqVO);
+
+
 package cn.iocoder.yudao.module.system.service.auth;
 
 import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
@@ -22,6 +26,11 @@ public interface AdminAuthService {
      * @return 用户
      */
     AdminUserDO authenticate(String username, String password);
+
+
+    /*账号注册*/
+    AuthLoginRespVO register(@Valid AuthRegisterReqVO reqVO);
+
 
     /**
      * 账号登录

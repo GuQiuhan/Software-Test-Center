@@ -52,3 +52,5 @@ rebel.xml
 application-my.yaml
 
 /yudao-ui-app/unpackage/
+
+/yudao-ui-admin/.env.local
